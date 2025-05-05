@@ -1,4 +1,5 @@
-Dataset
+# 1.Dataset
+'''
 data
 ├── coco
 │   ├── precomp 
@@ -21,12 +22,16 @@ data
 │          └── ...
 │   
 └── vocab  
-
+'''
 The download links for original COCO/F30K images, precomputed BUTD features, and corresponding vocabularies are from the official repo of SCAN. The precomp folders contain pre-computed BUTD region features, data/coco/images contains raw MS-COCO images, and data/f30k/flickr30k-images contains raw Flickr30K images. Because the download link for the pre-computed features in SCAN is seemingly taken down. The link provided by the author of vse_infty contains a copy of these files.
 
-Training and Evaluation
-1.run ./train_xxx_f30k.sh or ./train_xxx_coco.sh. For example:
+# 2.Training and Evaluation
+## 1.run ./train_xxx_f30k.sh or ./train_xxx_coco.sh. For example:
+'''
 sh train_GRU_f30k.sh
-2.Evaluation: Run the following commands after modifying the default data and model path to yourself path.
+'''
+## 2.Evaluation: Run the following commands after modifying the default data and model path to yourself path.
+'''
 cd ../
 python eval_ensemble.py
+'''
